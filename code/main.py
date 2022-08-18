@@ -93,7 +93,7 @@ def prediction():
     """
     Function verifying the file extension is within allowed list.
     """
-    model = noaa_class()
+    model = custom_class()
     result = model.predict()
     return render_template("prediction.html")
 
