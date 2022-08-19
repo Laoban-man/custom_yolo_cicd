@@ -1,0 +1,8 @@
+train: ../datasets/images/train/  
+val: ../datasets/images/val/  
+test: # optional
+# Classes
+nc: 6 # number of classes
+names: [ 'None', 'category_1', 'category_2', 'category_3', 'category_4','category_5']
+anchors:
+  - [10,13, 16,30, 33,23] # adapted because of small instance size

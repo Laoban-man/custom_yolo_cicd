@@ -133,7 +133,7 @@ class custom_class:
         Create a list containing the location and files of blobs (the differences)
         and write them to a tensorflow-format, itself converted to a coco format
         compatible with Detectron2 use. Downsampled images are not recommended as
-        down sampled images change the color of the dots used for seal detection.
+        down sampled images change the color of the dots used for instance detection.
         """
         folder_blobs = blob_folder
         files_blobs = [
@@ -285,7 +285,7 @@ class custom_class:
 
         def category(row):
             category = {}
-            category["supercategory"] = "Seal"
+            category["supercategory"] = "Supercategory"  # feel free to replace this
             category["id"] = row.categoryid
             category["name"] = row[3]
             return category
