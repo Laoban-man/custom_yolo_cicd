@@ -69,7 +69,7 @@ def allowed_file(filename):
 @app.route("/new_test.html", methods=["GET", "POST"])
 def upload_file():
     """
-    Render page which allows the user to upload a test file
+    Render page which allows the user to upload a test file.
     """
     if request.method == "POST":
         # check if the post request has the file part

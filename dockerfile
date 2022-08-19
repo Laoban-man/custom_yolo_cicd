@@ -16,6 +16,7 @@ RUN pip install -U torch torchvision scikit-learn wandb
 RUN apt-get install git -y
 RUN git clone https://github.com/ultralytics/yolov5  # clone
 RUN cd yolov5
+RUN rm -rf .git
 RUN pip install -r requirements.txt  # install
 COPY ./code /code
 ENTRYPOINT [ "python3" ]
